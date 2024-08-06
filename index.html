@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>adji_san Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <section class="hero">
+      <img
+        id="toggleTheme"
+        class="theme-btn"
+        src="assets/theme_light.png"
+        alt="theme icon"
+      />
+      <div class="hero-pic">
+        <div class="inner-circle"></div>
+        <img
+          src="assets/adjiw.png"
+          alt="Mason Wilkes"
+        />
+      </div>
+      <div class="hero-info">
+        <h1>Adji Komara Sandra</h1>
+        <h2>Data Scientist</h2>
+        <div class="logo-container">
+          <a href="https://github.com/Adjisandra23/"
+            ><img src="assets/github_light.png" alt="github logo"
+          /></a>
+          <a href="https://www.linkedin.com/in/adji-komara-sandra/"
+            ><img src="assets/linkedin_light.png" alt="linkedin logo"
+          /></a>
+          <a href="adjisandra23@gmail.com"
+            ><img src="assets/email_light.png" alt="email logo"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <section class="experience">
+      <!-- <h2><b>3</b><br />Years<br />Data Analyst</h2>  -->
+      <h2><b>Student</b><br/>at<br />Pamulang University</h2>
+      <!-- <h2><b>4</b><br />Satisfied<br />Freelance</h2> -->
+    </section>
+    <section class="cta">
+      <a href="assets/adji_resume.pdf" download>
+        <button class="btn download-btn">Download CV</button>
+      </a>
+      <a href="adjisandra23@gmail.com"
+        ><button class="btn contact-btn">Contact Me</button></a
+      >
+    </section>
+    <section class="portfolio-skills">
+      <div class="btn-bg">
+        <button class="btn-2 active-btn" id="portfolio-btn">Portfolio</button>
+        <button class="btn-2" id="skills-btn">Skills</button>
+        <button class="btn-2" id="about-btn">About Me</button>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="wrapper project-wrapper">
+        <a href="https://github.com/Adjisandra23/job_posting_analyst/blob/main/analyst_data_jobPostings.ipynb"
+          ><img src="assets/job_posting.png" alt="Project 1"
+        /></a>
+      </div>
+      <div class="wrapper project-wrapper">
+        <a href="https://public.tableau.com/app/profile/adjie.aja/viz/onprogres/Dashboard1/"
+          ><img src="assets/tableau.png" alt="Project 2"
+        /></a>
+      </div>
+      <div class="wrapper project-wrapper">
+        <a href="https://github.com/Adjisandra23/sql_analyst/tree/main/SQL%20Project/"
+          ><img src="assets/job_posting_sql.png" alt="Project 3"
+        /></a>
+      </div>
+      <div class="wrapper project-wrapper">
+        <a href="https://public.tableau.com/app/profile/adjie.aja/viz/project_17185188351210/Dashboard1/"
+          ><img src="assets/tableau2.png" alt="Project 4"
+        /></a>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="wrapper">
+        <h3>Data Analyst Tools</h3>
+        <article class="frontend-skills">
+          <p>Vs Code</p>
+          <p>MySQL</p>
+          <p>Postgres</p>
+          <p>Power BI</p>
+          <p>Tableau</p>
+          <p>Excel</p>
+        </article>
+      </div>
+      <div class="wrapper">
+        <h3>Data Analyst Skills</h3>
+        <article class="backend-skills">
+          <p>Python</p>
+          <p>Matplotlib</p>
+          <p>Pandas</p>
+          <p>Numpy</p>
+          <p>Seaborn</p>
+          <p>SQL</p>
+        </article>
+      </div>
+    </section>
+    <section class="about-me" id="about-me" style="display: none;">
+      <div class="wrapper">
+        <h3>About Me</h3>
+        <p>Hello! I'm Adji Komara Sandra, a passionate data scientist and student at Pamulang University. I have a keen interest in data analysis and visualization, and I'm always eager to learn and explore new technologies. My background in electrical engineering and vehicle mechanics has provided me with a strong foundation in analytical thinking and problem-solving. In my free time, I enjoy working on data projects and honing my skills in various data tools and technologies.</p>
+      </div>
+    </section>
+    <!-- <footer>
+      <p>&copy</p>
+    </footer> -->
+  </body>
+</html>
