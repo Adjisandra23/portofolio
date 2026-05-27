@@ -86,72 +86,36 @@ article,
   gap: 1rem;
 }
 
-/* FOTO PROFILE */
-
 .hero-pic {
-  width: 220px;
-  height: 220px;
-
-  position: relative;
-
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
-
   overflow: hidden;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin-bottom: 1rem;
-
-  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+  position: relative;
 }
 
-/* lingkaran dekoratif */
-.inner-circle{
-  position:absolute;
-
-  inset:8px;
-
-  border-radius:50%;
-
-  border:3px solid var(--primary-bg-color);
-
-  z-index:2;
-
-  pointer-events:none;
+.inner-circle {
+  content: "";
+  position: absolute;
+  top: 0.1rem; /* Adjust border thickness */
+  left: 0.1rem;
+  bottom: 0.1rem;
+  right: 0.1rem;
+  border-radius: 50%;
+  border: 0.18rem solid var(--primary-bg-color); /* Define your border thickness and color */
+  z-index: 1; /* Make sure it is above the image */
 }
 
-/* FOTO */
-.hero-pic img{
-  width:100%;
-  height:100%;
-
-  border-radius:50%;
-
-  object-fit:cover;
-
-  /* atur wajah */
-  object-position:center 20%;
-
-  transform:none;
-
-  transition:transform .35s ease;
+.hero-pic img,
+.wrapper img {
+  width: 100%;
 }
 
-/* efek hover */
-.hero-pic:hover img{
-  transform:scale(1.05);
-}
-
-/* responsive */
-@media (max-width:768px){
-
-  .hero-pic{
-      width:180px;
-      height:180px;
-  }
-
+.hero-pic img {
+  height: 100%;
+  object-fit: cover;
+  object-position: top 0.4rem right -1.3rem;
+  transform: scale(1.9);
 }
 
 .hero-info h1,
