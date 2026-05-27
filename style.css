@@ -86,24 +86,49 @@ article,
   gap: 1rem;
 }
 
-.hero-pic {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
+.hero-pic{
+  position:relative;
+
+  width:8rem;
+  height:8rem;
+
+  border-radius:50%;
+
+  overflow:hidden;
+
+  margin:auto;
 }
 
-.inner-circle {
-  content: "";
-  position: absolute;
-  top: 0.1rem; /* Adjust border thickness */
-  left: 0.1rem;
-  bottom: 0.1rem;
-  right: 0.1rem;
-  border-radius: 50%;
-  border: 0.18rem solid var(--primary-bg-color); /* Define your border thickness and color */
-  z-index: 1; /* Make sure it is above the image */
+.profile-image{
+
+  width:100%;
+  height:100%;
+
+  border-radius:50%;
+
+  object-fit:cover;
+
+  object-position:center 15%;
+
+  transition:.3s ease;
+}
+
+.hero-pic:hover .profile-image{
+  transform:scale(1.05);
+}
+
+.inner-circle{
+
+  position:absolute;
+
+  inset:4px;
+
+  border-radius:50%;
+
+  border:.18rem solid var(--primary-bg-color);
+
+  pointer-events:none;
+
 }
 
 .hero-pic img,
@@ -111,16 +136,10 @@ article,
   width: 100%;
 }
 
-.hero-pic img {
-  height: 100%;
-  object-fit: cover;
-  object-position: top 0.4rem right -1.3rem;
-  transform: scale(1.9);
-}
 
 .hero-info h1,
-h2 {
-  font-weight: 400;
+.hero-info h2{
+  font-weight:400;
 }
 
 article p,
@@ -315,9 +334,26 @@ article p {
   box-sizing: border-box; /* Termasuk padding dan border dalam ukuran elemen */
 }
 
-.dark-theme .about-me {
-  background-color: var(--dark-primary-bg-color); /* Latar belakang gelap untuk tema gelap */
-  color: var(--dark-primary-bg-color); /* Warna teks terang untuk tema gelap */
+.about-me{
+
+display:none;
+
+justify-content:center;
+
+padding:2rem;
+
+}
+
+.about-me .wrapper{
+
+width:min(800px,90%);
+
+padding:2rem;
+
+background:var(--btn-bg-light);
+
+border-radius:1rem;
+
 }
 
 .about-me .wrapper {
@@ -366,4 +402,25 @@ footer {
     width: calc(48%);
     flex: none;
   }
+}
+@media(max-width:768px){
+
+.wrapper{
+width:90%;
+}
+
+.btn-bg{
+
+width:95%;
+
+gap:.5rem;
+
+}
+
+.btn-2{
+
+width:100%;
+
+}
+
 }
